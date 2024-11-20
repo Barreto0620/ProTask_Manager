@@ -97,4 +97,3 @@ Contribuições e feedbacks são bem-vindos! Se você quiser contribuir para o p
 - E-mail: gabrielprozds@email.com
 
 Obrigado por visitar meu repositório e por seu interesse no "ProTask Manager"!
-```
