@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# ProTask Manager - Projeto React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição:
+O "ProTask Manager" é uma aplicação desenvolvida com React, focada no gerenciamento de tarefas e projetos. O objetivo principal do projeto é aplicar os conceitos fundamentais do React, como a criação de componentes reutilizáveis, navegação entre páginas utilizando React Router, integração com uma API simulada (JSON Server), e uso de hooks como `useState` e `useEffect` para gerenciar o estado da aplicação e realizar requisições assíncronas.
 
-## Available Scripts
+A aplicação permite aos usuários:
+- Criar, visualizar e excluir tarefas e projetos.
+- Interagir com formulários para envio de dados.
+- Navegar entre diferentes páginas relacionadas ao gerenciamento de tarefas e informações.
 
-In the project directory, you can run:
+## Funcionalidades:
+- **Componentes Reutilizáveis**:
+  - Cabeçalho (Header)
+  - Rodapé (Footer)
+  - Cartões de informações (Card)
+  - Formulários de envio de dados
 
-### `npm start`
+- **Rotas com React Router**:
+  - Página inicial
+  - Página de tarefas
+  - Página de contato
+  - Página sobre
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Formulários**:
+  - Formulário de contato para enviar informações para a API.
+  - Validação de campos para garantir dados corretos antes do envio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Integração com JSON Server**:
+  - Operações CRUD:
+    - **GET**: Buscar tarefas e projetos.
+    - **POST**: Enviar dados do formulário para a API.
+    - **DELETE**: Excluir tarefas ou projetos.
 
-### `npm test`
+- **Uso de Hooks**:
+  - `useState`: Gerencia o estado da aplicação, como dados de formulários e lista de tarefas.
+  - `useEffect`: Realiza requisições assíncronas para buscar dados da API ao inicializar as páginas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas:
+- React
+- React Router
+- JSON Server (para simulação de API)
+- HTML5
+- CSS3 (ou SASS para estilo, caso implementado)
+- Hooks: `useState`, `useEffect`
 
-### `npm run build`
+## Como Executar o Projeto:
+1. Clone este repositório em sua máquina local.
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o JSON Server com o comando:
+   ```bash
+   npx json-server --watch db.json --port 5000
+   ```
+4. Inicie o projeto React:
+   ```bash
+   npm start
+   ```
+5. Abra a aplicação no navegador em [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demonstração do Código:
+1. **Componentes Reutilizáveis**:
+   - O código está organizado em componentes modulares e reutilizáveis como `Header`, `Footer`, e `Card`, facilitando a manutenção e expansão do projeto.
+   
+2. **Rotas com React Router**:
+   - O React Router define as páginas principais do projeto, permitindo uma navegação fluida entre as seções:
+     - Página inicial
+     - Página de tarefas
+     - Página de contato
+     - Página sobre
+   
+3. **Formulários**:
+   - O formulário de contato realiza a validação dos campos antes de enviar os dados para a API. Esse processo garante que apenas dados válidos sejam enviados.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Integração com a API (JSON Server)**:
+   - O JSON Server simula um backend para o projeto, realizando operações CRUD (Create, Read, Update, Delete) com os dados de tarefas e projetos.
+   
+5. **Uso de Hooks (useState e useEffect)**:
+   - `useState`: Gerencia os estados dos dados de tarefas e do formulário.
+   - `useEffect`: Faz as requisições assíncronas para buscar os dados da API quando a página é carregada.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Conclusão:
+O "ProTask Manager" é um projeto funcional que atende aos requisitos do trabalho, como a criação de componentes reutilizáveis, integração com uma API simulada, uso de React Router para navegação e a implementação de hooks. A aplicação oferece uma maneira eficiente de gerenciar tarefas e projetos de forma intuitiva e responsiva.
 
-### `npm run eject`
+## Código-fonte:
+- Repositório no GitHub: [Link para o repositório](https://github.com/Barreto0620/ProTask_Manager)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Licença:
+Este projeto está licenciado sob a Licença MIT - sinta-se à vontade para usar, modificar e distribuir de acordo com os termos da licença.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuições:
+Contribuições e feedbacks são bem-vindos! Se você quiser contribuir para o projeto ou reportar problemas, fique à vontade para abrir uma issue ou enviar um pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contato:
+- LinkedIn: [www.linkedin.com/in/gabriel-barreto-oliveira](https://www.linkedin.com/in/gabriel-barreto-oliveira)
+- E-mail: gabrielprozds@email.com
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Obrigado por visitar meu repositório e por seu interesse no "ProTask Manager"!
+```
