@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": "2a7d",
+      "name": "P.i",
+      "description": "Projeto Integrador"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "581f",
+      "title": "Terminar Carrinho",
+      "status": "Em Andamento"
+    }
+  ]
+}
